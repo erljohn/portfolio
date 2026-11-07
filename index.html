@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Portfolio of Erljohn Fritz Famitanico, Computer Engineering graduate: IT support, embedded systems, electronics and multimedia design.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%92%BB%3C/text%3E%3C/svg%3E">
+<title>Erljohn Fritz Famitanico — Computer Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f5f1;--surface:#fff;--text:#16181d;--muted:#5d6370;--line:#e2e0d9;--accent:#e4572e;--accent2:#1b998b;--glow:rgba(228,87,46,.12);color-scheme:light;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1014;--surface:#161a21;--text:#eceae4;--muted:#9aa1ad;--line:#262b34;--accent:#ff7a50;--accent2:#3fd0bf;--glow:rgba(255,122,80,.14);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e1014;--surface:#161a21;--text:#eceae4;--muted:#9aa1ad;--line:#262b34;--accent:#ff7a50;--accent2:#3fd0bf;--glow:rgba(255,122,80,.14);color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:60}
+.mono{font-family:'JetBrains Mono',ui-monospace,monospace}
+.glow{position:fixed;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,var(--glow),transparent 65%);pointer-events:none;transform:translate(-50%,-50%);z-index:0;left:50%;top:30%}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px;position:relative;z-index:1}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:700;text-decoration:none;letter-spacing:-.02em}.logo span{color:var(--accent)}
+.links{display:flex;gap:22px;align-items:center;font-size:.92rem}
+.links a{text-decoration:none;color:var(--muted);transition:color .2s}.links a:hover,.links a.on{color:var(--text)}
+.tbtn{background:none;border:1px solid var(--line);color:var(--text);border-radius:99px;width:36px;height:36px;cursor:pointer;font-size:1rem}
+.tbtn:hover{border-color:var(--accent)}
+@media(max-width:640px){.links a:not(.keep){display:none}}
+header.hero{padding:96px 0 72px}
+.tag{display:inline-flex;gap:8px;align-items:center;font-size:.82rem;color:var(--muted);border:1px solid var(--line);background:var(--surface);padding:6px 14px;border-radius:99px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--accent2);box-shadow:0 0 0 4px color-mix(in srgb,var(--accent2) 25%,transparent);animation:p 2s infinite}
+@keyframes p{50%{box-shadow:0 0 0 8px transparent}}
+h1{font-size:clamp(2.4rem,7vw,5rem);line-height:1.02;letter-spacing:-.04em;margin:22px 0 18px}
+h1 em{font-style:normal;color:var(--accent)}
+.role{font-size:clamp(1.05rem,2.4vw,1.35rem);color:var(--muted);min-height:2em}
+.role b{color:var(--text);font-weight:500}.caret{display:inline-block;width:2px;height:1.1em;background:var(--accent);vertical-align:-.2em;margin-left:2px;animation:b 1s steps(1) infinite}
+@keyframes b{50%{opacity:0}}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn{padding:13px 24px;border-radius:12px;text-decoration:none;font-weight:500;border:1px solid var(--text);transition:transform .2s,background .2s}
+.btn.p{background:var(--text);color:var(--bg)}.btn:hover{transform:translateY(-2px)}.btn.s:hover{background:var(--surface)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:56px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px 20px}
+.stat strong{display:block;font-size:2rem;letter-spacing:-.03em}.stat span{color:var(--muted);font-size:.85rem}
+section{padding:72px 0}
+.eyebrow{font-size:.8rem;color:var(--accent);letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px}
+h2{font-size:clamp(1.7rem,4vw,2.5rem);letter-spacing:-.03em;margin:0 0 32px}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:40px}
+@media(max-width:760px){.about{grid-template-columns:1fr}}
+.about p{margin:0 0 16px;color:var(--muted);font-size:1.05rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:24px}
+.facts{list-style:none;margin:0;padding:0;display:grid;gap:14px;font-size:.95rem}
+.facts li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px dashed var(--line);padding-bottom:10px}
+.facts li span:first-child{color:var(--muted)}.facts li span:last-child{text-align:right}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.skills h3{margin:0 0 14px;font-size:1rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:.8rem;padding:5px 12px;border-radius:99px;border:1px solid var(--line);background:var(--bg);transition:.2s}
+.chip:hover{border-color:var(--accent);color:var(--accent)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.f{border:1px solid var(--line);background:var(--surface);color:var(--muted);padding:7px 16px;border-radius:99px;cursor:pointer;font:inherit;font-size:.88rem}
+.f.on,.f:hover{background:var(--text);color:var(--bg);border-color:var(--text)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:20px;overflow:hidden;cursor:pointer;transition:transform .25s,box-shadow .25s,border-color .25s;text-align:left;padding:0;font:inherit;color:inherit;display:flex;flex-direction:column}
+.proj:hover,.proj:focus-visible{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 18px 40px -18px color-mix(in srgb,var(--accent) 50%,transparent);outline:none}
+.cover{height:170px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:16px;color:#fff}
+.cover::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.1) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.1) 1px,transparent 1px);background-size:24px 24px;mask-image:linear-gradient(to bottom,transparent,#000)}
+.cover .big{position:absolute;right:-6px;top:-18px;font-size:6.5rem;font-weight:700;opacity:.18;letter-spacing:-.06em}
+.cover code{position:relative;font-size:.78rem;background:rgba(0,0,0,.35);padding:4px 10px;border-radius:8px}
+.cover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pb{padding:18px 20px 22px;display:flex;flex-direction:column;gap:10px;flex:1}
+.pb h3{margin:0;font-size:1.15rem;letter-spacing:-.01em}.pb p{margin:0;color:var(--muted);font-size:.92rem}
+.pb .chips{margin-top:auto}
+.tl{border-left:2px solid var(--line);margin-left:6px;display:grid;gap:26px}
+.tl>div{position:relative;padding-left:26px}
+.tl>div::before{content:"";position:absolute;left:-7px;top:7px;width:12px;height:12px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+.tl h3{margin:0;font-size:1.08rem}.tl small{color:var(--muted)}.tl p{margin:6px 0 0;color:var(--muted)}
+.contact{text-align:center}
+.contact .big{font-size:clamp(1.8rem,5vw,3.4rem);letter-spacing:-.04em;line-height:1.1;margin:0 0 24px}
+.soc{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.85rem;text-align:center}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;align-items:center;justify-content:center;padding:20px;z-index:100}
+.modal.open{display:flex}
+.mb{background:var(--surface);border-radius:22px;max-width:620px;width:100%;max-height:88vh;overflow:auto;border:1px solid var(--line)}
+.mb .pb{padding:24px}.mb ul{margin:0;padding-left:18px;color:var(--muted)}
+.x{position:absolute;right:14px;top:14px;z-index:2;background:rgba(0,0,0,.5);color:#fff;border:0;width:34px;height:34px;border-radius:50%;cursor:pointer}
+.mw{position:relative}
+.note{font-size:.8rem;color:var(--muted);border:1px dashed var(--line);border-radius:10px;padding:8px 12px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+
+[hidden]{display:none!important}
+.admin-fab{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:90;background:var(--accent);color:#fff;border:0;border-radius:99px;padding:12px 20px;font:500 .9rem 'Space Grotesk',system-ui,sans-serif;cursor:pointer;box-shadow:0 10px 30px -8px rgba(0,0,0,.4)}
+.drawer{position:fixed;inset:0;z-index:200;background:var(--bg);overflow:auto;padding-top:env(safe-area-inset-top,0px)}
+.dw{max-width:820px;margin:0 auto;padding:24px}
+.dh{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-bottom:16px;position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:2;border-bottom:1px solid var(--line)}
+.dh h2{margin:0;font-size:1.4rem}.dh .btn{padding:9px 18px;cursor:pointer;font:inherit;font-weight:500}
+.dw .filters{margin:18px 0}
+.acard{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:16px;display:grid;gap:12px}
+.arow{display:flex;justify-content:space-between;gap:8px;align-items:center}
+.dw label{display:grid;gap:4px;font-size:.82rem;color:var(--muted)}
+.dw input,.dw textarea{font:inherit;color:var(--text);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;width:100%}
+.dw input:focus,.dw textarea:focus{outline:2px solid var(--accent);border-color:transparent}
+.dw .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.dw .mini{background:none;border:1px solid var(--line);color:var(--text);border-radius:8px;padding:4px 10px;cursor:pointer;font:inherit;font-size:.8rem}
+.dw .mini:hover{border-color:var(--accent)}
+.dw .img{display:flex;gap:10px;align-items:center;flex-wrap:wrap}.dw .img img{height:64px;border-radius:8px}
+.dw .hint{font-size:.82rem;color:var(--muted);margin:0 0 12px}
+.cg{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.cc{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;cursor:pointer;padding:0;font:inherit;color:inherit;text-align:left;transition:transform .25s,border-color .25s}
+.cc:hover,.cc:focus-visible{transform:translateY(-5px);border-color:var(--accent);outline:none}
+.cm{position:relative;aspect-ratio:4/3;background:linear-gradient(135deg,var(--accent),var(--accent2));overflow:hidden;display:flex;align-items:center;justify-content:center}
+.cm img,.cm video{width:100%;height:100%;object-fit:cover;display:block}
+.cph{font-size:2.4rem;color:#fff}
+.play{position:absolute;right:10px;bottom:10px;width:34px;height:34px;border-radius:50%;background:rgba(0,0,0,.6);color:#fff;font-style:normal;display:grid;place-items:center;font-size:.8rem}
+.cb{padding:12px 16px 16px}.cb h3{margin:0 0 2px;font-size:1rem}.cb small{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="glow" id="glow"></div>
+<nav><div class="wrap">
+<a class="logo" href="#top">EFF<span>.</span></a>
+<div class="links"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#creative">Creative</a><a href="#journey">Journey</a><a class="keep" href="#contact">Contact</a><button class="tbtn" id="theme" aria-label="Toggle theme">◐</button></div>
+</div></nav>
+
+<main id="top">
+<header class="hero"><div class="wrap">
+<span class="tag mono"><i class="dot"></i> Open to opportunities</span>
+<h1>Hi, I’m <em>Erljohn Fritz</em> Famitanico.</h1>
+<div class="role">I’m <b id="type"></b><span class="caret"></span></div>
+<div class="cta"><a class="btn p" href="#projects">View my work</a><a class="btn s" href="#contact">Get in touch</a></div>
+<div class="stats">
+<div class="stat"><strong>BSCpE</strong><span>Computer Engineering</span></div>
+<div class="stat"><strong>2026</strong><span>Graduate, Universidad de Dagupan</span></div>
+<div class="stat"><strong id="pc">0</strong><span>Projects showcased</span></div>
+</div>
+</div></header>
+
+<section id="about"><div class="wrap rv">
+<div class="eyebrow mono">01 — About</div><h2>Part engineer, part creative.</h2>
+<div class="about">
+<div>
+<div id="bio"><p>I’m a Computer Engineering graduate with hands-on experience in IT support, embedded systems, electronics and multimedia design. I enjoy troubleshooting hardware and software, building microcontroller-based projects, and creating digital content with both technical and creative tools.</p>
+<p>Detail-oriented and adaptable, I like solving problems methodically. Programming is part of my toolkit (C++, Python and web basics), and I’m growing it with every project. I’m eager to keep developing professionally in a dynamic work environment.</p></div>
+
+</div>
+<div class="card"><ul class="facts" id="facts">
+<li><span>Degree</span><span>Computer Engineering</span></li>
+<li><span>Focus</span><span>IT Support · Embedded · Multimedia</span></li>
+<li><span>Location</span><span>Philippines</span></li>
+<li><span>Status</span><span>Graduate · Available</span></li>
+</ul></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap rv">
+<div class="eyebrow mono">02 — Skills</div><h2>Tools I work with.</h2>
+<div class="skills" id="skillGrid"></div>
+</div></section>
+
+<section id="projects"><div class="wrap rv">
+<div class="eyebrow mono">03 — Projects</div><h2>Selected work.</h2>
+<div class="filters" id="filters"></div>
+<div class="grid" id="grid"></div>
+</div></section>
+
+<section id="creative"><div class="wrap rv">
+<div class="eyebrow mono">04 — Creative</div><h2>Graphics &amp; video.</h2>
+<div class="grid cg" id="cg"></div>
+</div></section>
+
+<section id="journey"><div class="wrap rv">
+<div class="eyebrow mono">05 — Journey</div><h2>Education &amp; experience.</h2>
+<div class="tl" id="tl">
+<div><h3>Bachelor of Science in Computer Engineering</h3><small class="mono">Universidad de Dagupan · 2022 – 2026</small><p>Coursework and projects across hardware, software, electronics and embedded systems.</p></div>
+<div><h3>IT Department Intern</h3><small class="mono">Hytec Inc.</small><p>Worked toward a technical support role and assisted the graphics design team, applying design fundamentals on real tasks.</p></div>
+<div><h3>Vice President for Information</h3><small class="mono">Information Computer Engineering Student Organization · 2024 – 2026</small><p>Supported organizational communications and information management for two years.</p></div>
+<div><h3>DOST ROBOTECH Cup 2026 Participant</h3><small class="mono">Robotics competition · 2026</small><p>Took part in the national robotics competition.</p></div>
+<div><h3>BOSH Qualified: Safety Officer 2 (SO2)</h3><small class="mono">Occupational safety certification</small><p>Completed Basic Occupational Safety and Health training.</p></div>
+</div></div></section>
+
+<section id="contact"><div class="wrap rv contact">
+<div class="eyebrow mono">06 — Contact</div>
+<p class="big">Let’s build something<br>worth shipping.</p>
+<a class="btn p" id="mail" href="mailto:your.email@example.com">your.email@example.com</a>
+<div class="soc" id="soc"></div>
+</div></section>
+</main>
+<footer>© <span id="yr"></span> Erljohn Fritz Famitanico · Designed &amp; built with care</footer>
+
+<script id="data" type="application/json">{"roles":["a Computer Engineer","an IT Support Specialist","an Embedded Systems Tinkerer","a Multimedia Designer"],"bio":"I’m a Computer Engineering graduate with hands-on experience in IT support, embedded systems, electronics and multimedia design. I enjoy troubleshooting hardware and software, building microcontroller-based projects, and creating digital content with both technical and creative tools.\n\nDetail-oriented and adaptable, I like solving problems methodically. Programming is part of my toolkit (C++, Python and web basics), and I’m growing it with every project. I’m eager to keep developing professionally in a dynamic work environment.","facts":[["Degree","Computer Engineering"],["Focus","IT Support · Embedded · Multimedia"],["Location","Philippines"],["Status","Graduate · Available"]],"skills":{"Technical & IT":["Hardware Troubleshooting","Software Troubleshooting","Networking","System Maintenance","Technical Documentation"],"Embedded & Electronics":["Embedded Systems","Microcontroller Projects","Electronics"],"Programming":["C++","Python","JavaScript","HTML","CSS"],"Multimedia & Design":["Premiere Pro","After Effects","Photoshop","Lightroom","Media Encoder","Adobe Express","Canva","CapCut"]},"projects":[{"title":"Reaction Catch Stick – Arcade Game","cat":"Embedded","year":"2024-2026","desc":" Developed an interactive arcade game designed to test player reaction speed using electronic controls and sensors","tech":["Microcontrollers","Sensors","C++"],"points":[],"link":"","repo":"","image":""},{"title":"Light Following Robot","cat":"Embedded","year":"2026","desc":" Built an autonomous robot that follows light using only transistors and LDR sensors","tech":["Electronics","Sensors"],"points":[],"link":"","repo":"","image":"media/81665c025f6aca92df57a781f8209f9e.jpg"},{"title":"Quadruped Spider Robot","cat":"Embedded","year":"2025-2026","desc":"Developed an ESP32-controlled four-legged robot using servo-based movement.\n","tech":["Microcontrollers","Servo Motors","C++","Esp-32"],"points":[],"link":"","repo":"","image":"media/215482418662adf11a77371aa8ff3258.jpg"},{"title":"Autonomous Bin Collection Robot","cat":"Embedded","year":"2026","desc":" Built a robot integrating object detection, sensors, motors, and autonomous navigation","tech":["Python","Raspberry pi","Machine learning"],"points":[],"link":"","repo":"https://github.com/erljohn/Autonomous-Bin-Collection","image":""}],"journey":[{"t":"Bachelor of Science in Computer Engineering","s":"Universidad de Dagupan · 2022 – 2026","d":"Coursework and projects across hardware, software, electronics and embedded systems."},{"t":"IT Department Intern","s":"Hytec Inc.  ·  2025","d":"Worked toward a technical support role and assisted the graphics design team, applying design fundamentals on real tasks."},{"t":"Vice President for Information","s":"Information Computer Engineering Student Organization · 2024 – 2026","d":"Supported organizational communications and information management for two years."},{"t":"DOST ROBOTECH Cup 2026 Participant","s":"Robotics competition · 2026","d":"Took part in the national robotics competition."},{"t":"BOSH Qualified: Safety Officer 2 (SO2)","s":"Occupational safety certification","d":"Completed Basic Occupational Safety and Health training."}],"contact":{"email":"your.email@example.com","github":"","linkedin":"","resume":""},"creative":[{"title":"TRACER: Mobile Robotics Seminar & Competition Poster","type":"image","tools":["Canva","Adobe Photoshop"],"year":"2025","desc":"Created promotional poster materials using Canva and Adobe Photoshop, focusing on visual layout, typography, graphic elements, and event branding.","src":"media/f4433161839ce20ab121ba91a6672b0c.jpg","thumb":"","link":"https://www.facebook.com/UdDCESS/posts/pfbid02K4D21Pm122gK7LBcjy1THZtrijxWcEd18Xh9H6FNZExrvWuwmNpo2SVtUyCg1QJol"},{"title":"Miss UDD Ambassador 2024 – Winners' Congratulations Poster","type":"image","tools":["Canva","Adobe Photoshop"],"year":"2024","desc":"Designed a congratulatory poster recognizing the winners of Miss UDD Ambassador 2024, using Canva and Adobe Photoshop for layout, photo composition, typography, and visual presentation.","src":"media/74c8fd9995f51742bc52f13f2829652e.jpg","thumb":"","link":"https://www.facebook.com/UdDCESS/posts/pfbid0CYzmqNAW2HJivS3q1QFp4ouPrbccT4R1WnHtG1ncU9JkLGiswSAtUH89WZdHGbJil"},{"title":"Kick-Off Party – Event Video Editing","type":"image","tools":["Adobe Premier pro","Adobe After effects"],"year":"2024","desc":"dited event video highlights showcasing key moments and activities from the Kick-Off Party, using video editing tools to create engaging visual content.","src":"","thumb":"media/73de0dbb180baa624dd9b0e9475ab81b.jpg","link":"https://www.facebook.com/watch/?ref=saved&v=506938402022508"},{"title":"University Week – Event Video Editing","type":"image","tools":["Adobe premier pro","Adobe after effects"],"year":"","desc":"Edited event highlights showcasing University Week activities, performances, and memorable moments through engaging video content.","src":"","thumb":"media/fb14681b4552497b368bf38fced39a9d.jpg","link":"https://www.facebook.com/watch/?ref=saved&v=530239186370038"},{"title":"TRACER – Robotics Seminar and Competition | Day 1 & 2 Highlights","type":"video","tools":["Capcut"],"year":"2025","desc":"Edited event highlight videos documenting the activities, seminar sessions, and competition moments from Day 1 and Day 2.","src":"media/b424b6a5b77867141ba14101c9affa03.mp4","thumb":"media/94d19fe2efa87b84d3213b134d63b254.jpg","link":"https://www.facebook.com/watch/?ref=saved&v=1560362807985829"}]}</script>
+<div class="modal" id="modal" role="dialog" aria-modal="true"><div class="mb mw" id="mb"></div></div>
+
+<script>
+// Site content lives in the #data JSON block, edited through the admin panel.
+const D=JSON.parse(document.getElementById('data').textContent);
+D.creative=D.creative||[];
+const ROLES=D.roles,SKILLS=D.skills,PROJECTS=D.projects;
+const $=s=>document.querySelector(s);
+// theme
+const root=document.documentElement;
+$('#theme').onclick=()=>{const d=root.dataset.theme==='dark'||(!root.dataset.theme&&matchMedia('(prefers-color-scheme:dark)').matches);root.dataset.theme=d?'light':'dark'};
+$('#yr').textContent=new Date().getFullYear();
+// typing
+let ri=0,ci=0,del=false;const te=$('#type');
+(function t(){const w=ROLES[ri];ci+=del?-1:1;te.textContent=w.slice(0,ci);let s=del?35:70;
+ if(!del&&ci===w.length){del=true;s=1600}else if(del&&ci===0){del=false;ri=(ri+1)%ROLES.length;s=300}setTimeout(t,s)})();
+// skills
+$('#skillGrid').innerHTML=Object.entries(SKILLS).map(([k,v])=>`<div class="card"><h3>${k}</h3><div class="chips">${v.map(x=>`<span class="chip mono">${x}</span>`).join('')}</div></div>`).join('');
+// projects
+const hue=s=>[...s].reduce((a,c)=>a*31+c.charCodeAt(0),7)%360;
+const cover=p=>{const h=hue(p.title);return `<div class="cover" style="background:linear-gradient(135deg,hsl(${h} 70% 45%),hsl(${(h+50)%360} 75% 35%))">${p.image?`<img src="${p.image}" alt="${p.title} screenshot">`:`<span class="big">${p.title.charAt(0)}</span>`}<code class="mono">${p.cat.toLowerCase()}/${p.title.toLowerCase().replace(/\s+/g,'-')}</code></div>`};
+const chips=a=>`<div class="chips">${a.map(x=>`<span class="chip mono">${x}</span>`).join('')}</div>`;
+let cur='All';
+function render(){
+ const cats=['All',...new Set(PROJECTS.map(p=>p.cat))];
+ $('#filters').innerHTML=cats.map(c=>`<button class="f${c===cur?' on':''}" data-c="${c}">${c}</button>`).join('');
+ $('#grid').innerHTML=PROJECTS.map((p,i)=>({p,i})).filter(o=>cur==='All'||o.p.cat===cur).map(({p,i})=>`<button class="proj" data-i="${i}">${cover(p)}<div class="pb"><h3>${p.title}</h3><p>${p.desc}</p>${chips(p.tech)}</div></button>`).join('');
+}
+render();$('#pc').textContent=PROJECTS.length;
+$('#filters').onclick=e=>{const b=e.target.closest('.f');if(b){cur=b.dataset.c;render()}};
+$('#grid').onclick=e=>{const b=e.target.closest('.proj');if(!b)return;const p=PROJECTS[b.dataset.i];
+ $('#mb').innerHTML=`<button class="x" aria-label="Close" id="cx">✕</button>${cover(p)}<div class="pb"><small class="mono" style="color:var(--muted)">${p.cat} · ${p.year}</small><h3 style="font-size:1.5rem">${p.title}</h3><p>${p.desc}</p><ul>${p.points.map(x=>`<li>${x}</li>`).join('')}</ul>${chips(p.tech)}<div class="cta" style="margin-top:8px">${p.link?`<a class="btn p" href="${p.link}" target="_blank" rel="noopener">Live demo</a>`:''}${p.repo?`<a class="btn s" href="${p.repo}" target="_blank" rel="noopener">Source code</a>`:''}</div></div>`;
+ $('#modal').classList.add('open');$('#cx').onclick=close};
+const close=()=>{$('#modal').classList.remove('open');$('#mb').innerHTML=''};
+$('#modal').onclick=e=>{if(e.target.id==='modal')close()};
+addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+// reveal + active nav
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)document.querySelectorAll('.links a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('section').forEach(s=>so.observe(s));
+// cursor glow
+addEventListener('pointermove',e=>{const g=$('#glow');g.style.left=e.clientX+'px';g.style.top=e.clientY+'px'});
+</script><script>
+(function(){
+const esc=s=>String(s==null?'':s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+// ---- public rendering of editable content
+$('#bio').innerHTML=D.bio.split(/\n\s*\n/).map(p=>`<p>${esc(p)}</p>`).join('');
+$('#facts').innerHTML=D.facts.map(([a,b])=>`<li><span>${esc(a)}</span><span>${esc(b)}</span></li>`).join('');
+$('#tl').innerHTML=D.journey.map(j=>`<div><h3>${esc(j.t)}</h3><small class="mono">${esc(j.s)}</small><p>${esc(j.d)}</p></div>`).join('');
+const C=D.contact,mail=$('#mail');mail.textContent=C.email;mail.href='mailto:'+C.email;
+$('#soc').innerHTML=[['GitHub',C.github],['LinkedIn',C.linkedin],['Résumé',C.resume]].filter(x=>x[1]).map(([n,u])=>`<a class="btn s" href="${esc(u)}" target="_blank" rel="noopener">${n}</a>`).join('');
+if(!PROJECTS.length)$('#grid').innerHTML='<p style="color:var(--muted)">Projects coming soon.</p>';
+const kind=c=>c.src?(c.type==='video'?'video':'image'):'link';
+const cmedia=c=>{const k=kind(c);return k==='image'?`<img src="${esc(c.src)}" alt="${esc(c.title)}" loading="lazy">`:k==='video'?`<video src="${esc(c.src)}#t=0.5" preload="metadata" muted playsinline></video>`:c.thumb?`<img src="${esc(c.thumb)}" alt="${esc(c.title)}" loading="lazy">`:'<span class="cph">▶</span>'};
+$('#cg').innerHTML=D.creative.length?D.creative.map((c,i)=>`<button class="cc" data-i="${i}"><div class="cm">${cmedia(c)}${kind(c)==='image'?'':'<i class="play">▶</i>'}</div><div class="cb"><h3>${esc(c.title)}</h3><small class="mono">${esc([...(c.tools||[]),c.year].filter(Boolean).join(' · '))}</small></div></button>`).join(''):'<p style="color:var(--muted)">Creative work coming soon.</p>';
+$('#cg').onclick=e=>{const b=e.target.closest('.cc');if(!b)return;const c=D.creative[b.dataset.i],k=kind(c);
+ const big=k==='video'?`<video src="${esc(c.src)}" controls autoplay playsinline style="width:100%;max-height:60vh;background:#000"></video>`:k==='image'?`<img src="${esc(c.src)}" alt="${esc(c.title)}" style="width:100%;max-height:60vh;object-fit:contain;background:#000">`:`<div class="cm" style="height:240px">${cmedia(c)}</div>`;
+ $('#mb').innerHTML=`<button class="x" aria-label="Close" id="cx">✕</button>${big}<div class="pb"><h3 style="font-size:1.4rem">${esc(c.title)}</h3>${c.desc?`<p>${esc(c.desc)}</p>`:''}${(c.tools||[]).length?`<div class="chips">${c.tools.map(x=>`<span class="chip mono">${esc(x)}</span>`).join('')}</div>`:''}${c.link?`<div class="cta" style="margin-top:8px"><a class="btn p" href="${esc(c.link)}" target="_blank" rel="noopener">${k==='link'?'Watch video ↗':'View original ↗'}</a></div>`:''}</div>`;
+ $('#modal').classList.add('open');$('#cx').onclick=close};
+
+})();
+</script></body></html>
